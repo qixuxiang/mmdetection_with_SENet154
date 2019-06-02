@@ -1,4 +1,9 @@
 # model settings
+'''
+from https://github.com/open-mmlab/mmdetection/issues/588
+wget -c http://data.lip6.fr/cadene/pretrainedmodels/senet154-c7b49a05.pth
+put 'senet154-c7b49a05.pth' in 'work_dirs/pre_train' folder.
+'''
 model = dict(
     type='RetinaNet',
     pretrained='work_dirs/pre_train/senet154-c7b49a05.pth',
